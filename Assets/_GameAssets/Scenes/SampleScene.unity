@@ -265,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 214703317}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.39869, y: 0, z: -11.68}
-  m_LocalScale: {x: 0.38032216, y: 0.13535748, z: 0.88361555}
+  m_LocalScale: {x: 0.42, y: 0.13535748, z: 0.88361555}
   m_Children:
   - {fileID: 790134560}
   - {fileID: 819981485}
@@ -286,16 +286,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b948240f5e013439d6c224aa0e9339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 214703320}
   fuerza: 200
   puntos: 0
   marcadorPuntos: {fileID: 348428060}
   prefabExplosion: {fileID: 198190893553081356, guid: 38decb4330426344998082c7949ac3e9,
     type: 2}
   sonidoExplosion: {fileID: 430514124}
-  x: 7
-  y: 7
-  z: 7
 --- !u!54 &214703320
 Rigidbody:
   m_ObjectHideFlags: 0

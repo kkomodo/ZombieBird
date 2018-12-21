@@ -11,9 +11,15 @@ public class pajaro : MonoBehaviour {
     [SerializeField] Text marcadorPuntos;
     [SerializeField] ParticleSystem prefabExplosion;
     [SerializeField] AudioSource sonidoExplosion;
-    [SerializeField] private float x = 0.5f;
-	[SerializeField] private float y = 0.5f;
-	[SerializeField] private float z = 0.5f;
+    [SerializeField] float x = 0.4f;
+    [SerializeField] float y = 0.1f;
+    [SerializeField] float z = 0.8f;
+    [SerializeField] float tamanox   
+    [SerializeField]  tamanoy; 
+    [SerializeField]  tamanoz;
+    [SerializeField] float agranda = 1;   
+
+
     AudioSource sonidoPuntuacion;
      
 
@@ -27,6 +33,10 @@ public class pajaro : MonoBehaviour {
         marcadorPuntos.text = "Puntos";
         sonidoPuntuacion = GetComponent<AudioSource>();
         
+        tamanox = transform.position.x;
+        tamanoy = transform.position.y;
+        tamanoz = transform.position.z
+
     }              
 
     void Update () {
@@ -87,7 +97,7 @@ public class pajaro : MonoBehaviour {
     }
 
 public void AgrandarPajaro(){
-  		transform.localScale = new Vector3(y,x,z);
+  		transform.localScale = new Vector3(tamanox, tamanoy,tamanoz);
 
 }
    // private void OnTriggerEnter(Collider grande)
